@@ -14,4 +14,8 @@ app.get("/api/v1/tasks/:id", (req, res) => {
     res.send("Got the specific task");
 });
 
+app.patch("/api/v1/tasks/:id", (req, res) => {
+    res.send("Updated the specific task");
+});
+
 app.listen(PORT, console.log("Server is started"));
